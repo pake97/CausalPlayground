@@ -1,4 +1,4 @@
-# Causal Runtime (Neo4j + DuckDB + Plugins)
+# Causal Playground
 
 Monorepo skeleton for a CIDR-style systems prototype:
 - A minimal causal DSL/IR compiled to two backends:
