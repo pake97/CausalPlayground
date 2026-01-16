@@ -1,0 +1,21 @@
+[project]
+name = "causalplayground"
+version = "0.0.1"
+description = "Causal runtime prototype: DSL/IR -> Cypher + SQL/PGQ backends + plugin runtime"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "pydantic>=2.6",
+  "neo4j>=5.20",
+  "duckdb>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.4",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
